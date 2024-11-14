@@ -2,20 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "TheYearofTheCamel-Thin";
+  src: url("/fonts/TheYearofTheCamel-Thin.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "TheYearofTheCamel-ExtraLight"; 
+  src: url("/fonts/TheYearofTheCamel-ExtraLight.otf");
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "TheYearofTheCamel-Light";
+  src: url("/fonts/TheYearofTheCamel-Light.otf");
 }
+
+@font-face {
+  font-family: "TheYearofTheCamel-Regular";
+  src: url("/fonts/TheYearofTheCamel-Regular.otf");
+}
+
+@font-face {
+  font-family: "TheYearofTheCamel-Medium";
+  src: url("/fonts/TheYearofTheCamel-Medium.otf");
+}
+
+@font-face {
+  font-family: "TheYearofTheCamel-Bold";
+  src: url("/fonts/TheYearofTheCamel-Bold.otf");
+}
+
+@font-face {
+  font-family: "TheYearofTheCamel-ExtraBold";
+  src: url("/fonts/TheYearofTheCamel-ExtraBold.otf");
+}
+
