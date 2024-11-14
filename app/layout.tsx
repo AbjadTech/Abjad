@@ -1,6 +1,7 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/languageSelction";
-import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "أبجد التقنية",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
           {children}
+          <SpeedInsights />
         </LanguageProvider>
       </body>
     </html>
