@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/languageSelction";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "أبجد التقنية",
   description: "نحن نصنع أدوات رائعة ومبتكرة لتمكين ودعم المجتمع، ودفع التغيير الإيجابي من خلال التكنولوجيا.",
@@ -24,6 +24,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <SpeedInsights />
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>
