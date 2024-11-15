@@ -28,12 +28,11 @@ export default function About() {
       p4: "Our tools are designed for those who care about the digital world - whether they're developers, tech enthusiasts, or everyday users looking for reliable security solutions. If you're someone who values functional security online, Abjad Tech is here to provide you with effective tools to navigate the digital world with confidence."
     }
   }
-
   return (
     <div className={`min-h-screen bg-[#F2F3F5] text-black ${!isArabic ? 'ltr' : 'rtl'}`} dir={isArabic ? 'rtl' : 'ltr'}>
       <button 
         onClick={() => setIsArabic(!isArabic)}
-        className="fixed top-4 right-4 z-50 bg-white/80 backdrop-blur-sm border border-black/10 shadow-lg rounded-full p-2.5 hover:bg-white/90 transition-all duration-300 group"
+        className="fixed top-4 right-4 lg:top-8 lg:right-8 z-50 bg-white/80 backdrop-blur-sm border border-black/10 shadow-lg rounded-full p-2.5 hover:bg-white/90 transition-all duration-300 group"
         aria-label="Switch language"
       >
         <div className="relative w-6 h-6 overflow-hidden">
@@ -46,53 +45,53 @@ export default function About() {
         </div>
       </button>
 
-      <header className="flex flex-col items-center py-6 md:py-10">
+      <header className="flex flex-col items-center py-6 md:py-10 lg:py-16">
         <Image
           src="/abjd_logo_blue.png?height=150&width=150"
           alt="TechCo logo"
           width={150}
           height={150}
-          className="w-24 h-24 md:w-[150px] md:h-[150px] mb-3"
+          className="w-24 h-24 md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] mb-3"
         />
         {isArabic ? (
-          <img src="/abjad_tech_text_ar.svg" alt="أبجد التقنية" className="w-full max-w-[280px] md:max-w-xl px-4" />
+          <img src="/abjad_tech_text_ar.svg" alt="أبجد التقنية" className="w-full max-w-[280px] md:max-w-xl lg:max-w-2xl px-4" />
         ) : (
-          <h1 className="font-bold mt-5 text-6xl md:text-[114px]" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>Abjad Tech</h1>
+          <h1 className="font-bold mt-5 text-6xl md:text-[114px] lg:text-[144px]" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>Abjad Tech</h1>
         )}
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-10">
-        <h2 className="text-2xl md:text-3xl mb-4 md:mb-6" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
+      <main className="max-w-4xl lg:max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-6 md:py-10 lg:py-16">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 lg:mb-8" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
           {isArabic ? content.ar.title1 : content.en.title1}
         </h2>
-        <p className="mb-8 md:mb-10 leading-relaxed text-sm md:text-base" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
+        <p className="mb-8 md:mb-10 lg:mb-12 leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
           {isArabic ? content.ar.p1 : content.en.p1}
         </p>
 
-        <h2 className="text-2xl md:text-3xl mb-4 md:mb-6" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 lg:mb-8" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
           {isArabic ? content.ar.title2 : content.en.title2}
         </h2>
-        <p className="mb-8 md:mb-10 leading-relaxed text-sm md:text-base" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
+        <p className="mb-8 md:mb-10 lg:mb-12 leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
           {isArabic ? content.ar.p2 : content.en.p2}
         </p>
 
-        <h2 className="text-2xl md:text-3xl mb-4 md:mb-6" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 lg:mb-8" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
           {isArabic ? content.ar.title3 : content.en.title3}
         </h2>
-        <p className="mb-8 md:mb-10 leading-relaxed text-sm md:text-base" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
+        <p className="mb-8 md:mb-10 lg:mb-12 leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
           {isArabic ? content.ar.p3 : content.en.p3}
         </p>
 
-        <h2 className="text-2xl md:text-3xl mb-4 md:mb-6" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 lg:mb-8" style={{ fontFamily: 'TheYearofTheCamel-Bold' }}>
           {isArabic ? content.ar.title4 : content.en.title4}
         </h2>
-        <p className="mb-8 md:mb-10 leading-relaxed text-sm md:text-base" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
+        <p className="mb-8 md:mb-10 lg:mb-12 leading-relaxed text-sm md:text-base lg:text-lg" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
           {isArabic ? content.ar.p4 : content.en.p4}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 md:mt-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 md:mt-12 lg:mt-16">
           <Link 
             href="mailto:hello@abjad.cc"
-            className="bg-[#2300F7] text-[#F2F3F5] font-bold py-2 px-6 hover:bg-opacity-90 transition-colors shadow-xl w-full sm:w-[180px] text-center text-sm md:text-base"
+            className="bg-[#2300F7] text-[#F2F3F5] font-bold py-2 px-6 lg:py-3 lg:px-8 hover:bg-opacity-90 transition-colors shadow-xl w-full sm:w-[180px] lg:w-[220px] text-center text-sm md:text-base lg:text-lg"
             style={{ fontFamily: 'TheYearofTheCamel-Bold' }}
           >
             {isArabic ? 'تواصل معنا' : 'Contact Us'}
@@ -100,7 +99,7 @@ export default function About() {
 
           <Link
             href="/"
-            className="bg-[#2300F7] text-[#F2F3F5] font-bold py-2 px-6 hover:bg-opacity-90 transition-colors shadow-xl w-full sm:w-[180px] text-center text-sm md:text-base"
+            className="bg-[#2300F7] text-[#F2F3F5] font-bold py-2 px-6 lg:py-3 lg:px-8 hover:bg-opacity-90 transition-colors shadow-xl w-full sm:w-[180px] lg:w-[220px] text-center text-sm md:text-base lg:text-lg"
             style={{ fontFamily: 'TheYearofTheCamel-Bold' }}
           >
             {isArabic ? 'الصفحة الرئيسية' : 'Home Page'}
