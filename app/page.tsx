@@ -67,7 +67,7 @@ export default function HomePage() {
       </main>
 
       <footer className="fixed bottom-0 left-0 right-0 py-4 px-5 lg:py-6 lg:px-8 border-t border-black/10 bg-[#F2F3F5]/80 backdrop-blur-sm">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm lg:text-base opacity-70" style={{ fontFamily: 'TheYearofTheCamel-Light' }}>
             {isArabic ? content.ar.copyright : content.en.copyright}
           </p>
