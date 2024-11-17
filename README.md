@@ -65,7 +65,7 @@ The application supports seamless switching between Arabic and English using a c
 
 ## 📄 License
 
-Copyright © 2024 Abjad Tech. All rights reserved.
+This project is licensed under the Apache License 2.0.
 
 ---
 
